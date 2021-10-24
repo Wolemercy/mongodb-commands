@@ -1,0 +1,1 @@
+db.restaurants.find({"address.coord.1": {$lt: -95.754168}})
