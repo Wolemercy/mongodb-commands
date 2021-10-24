@@ -1,0 +1,1 @@
+db.restaurants.find({$or: [{cuisine: {$nin: ["American ", "Chinese"]}}, {name: {$regex: /^Wil/}}]}, {restaurants_id:1, cuisine:1, name:1, borough:1})
