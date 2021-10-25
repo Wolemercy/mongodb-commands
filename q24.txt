@@ -1,0 +1,1 @@
+db.restaurants.find({ "address.coord.1": { $lt: 52, $gt: 42 } }, { restaurants_id: 1, name: 1, address: 1, coord:1 })
