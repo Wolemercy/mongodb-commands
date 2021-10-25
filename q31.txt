@@ -1,0 +1,1 @@
+db.restaurants.find( { "name": { $regex: ".*mon.*", $options: "i" } }, { name: 1, borough: 1, cuisine: 1, coord: 1 })
